@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi sitio web responsivo</title>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<header id="header">
+  <h1> Colegio Hogwarts de Magia y Hechicería</h1>
+  
+</header>
+
+<nav>
+  <button onclick="cambiarColores()">Cambiar Color</button>
+  <a href="index.html">Inicio</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="proyecto.html">Proyectos</a>
+  <a href="profesores.html">Profesores</a>
+  <button onclick="cambiarFondo()">Cambiar Fondo </button>
+</nav>
+
+<main>
+  <section  id="section">
+    <h2>Sobre Nosotros</h2>
+    <p>Bienvenidos al Colegio Hogwarts de Magia y Hechicería, la institución educativa de magia más prestigiosa del mundo, 
+        ubicada en las majestuosas Tierras Altas de Escocia. 
+        Fundado hace más de mil años por los cuatro magos más grandes de la época Godric Gryffindor,
+         Helga Hufflepuff, Rowena Ravenclaw y Salazar Slytherin, Hogwarts ha sido el faro de la educación mágica 
+         para jóvenes brujas y magos de Gran Bretaña e Irlanda durante generaciones.</p>
+  </section>
+
+  <aside  id="aside">
+    <h2>Nuestro Compromiso</h2>
+    <p>En Hogwarts, nos comprometemos a formar no solo magos y brujas competentes, 
+        sino también individuos íntegros, valientes y compasivos, 
+        listos para enfrentar los desafíos del mundo mágico y contribuir positivamente a él. 
+        Creemos que la magia, utilizada con sabiduría y responsabilidad, 
+        tiene el poder de hacer del mundo un lugar mejor.</p>
+  </aside>
+
+  <section class="galeria">
+    <img src="img/escudo-de-hogwarts.png" alt="Imagen 1">
+    <img src="img/gran-comedor.jpg" alt="Imagen 2">
+  </section>
+
+  <section class="formulario">
+    <h2>Contáctanos</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Ingresar nombre">
+
+      <label for="apellido_paterno">Apellido paterno</label>
+      <input type="text" id="apellido_paterno" name="apellido_paterno" required placeholder="Ingresar apellido paterno">
+
+      <label for="apellido_materno">Apellido materno</label>
+      <input type="text" id="apellido_materno" name="apellido_materno" required placeholder="Ingresar apellido materno">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+
+      <label for="curso">Curso</label>
+        <select id="curso" name="curso" required>
+            <option value="" disabled selected>Seleccionar curso</option>
+            <option value="curso1">Transformaciones</option>
+            <option value="curso2">Encantamientos</option>
+            <option value="curso3">Pociones</option>
+            <option value="curso4">Historia de la Magia</option>
+            <option value="curso5">Defensa Contra las Artes Oscuras</option>
+            <option value="curso6">Astronomía</option>
+            <option value="curso7">Herbología</option>
+            <option value="curso8">Vuelo en escoba</option>
+        </select>
+
+      <label for="mensaje">Mensaje:</label>
+      <label for="curso">Curso Opcional</label>
+        <select id="cursoo" name="cursoop" required>
+            <option value="" disabled selected>Seleccionar curso</option>
+            <option value="cursoo1">Cuidado de criarutas magicas</option>
+            <option value="cursoo2">Estudios muggles</option>
+            <option value="cursoo3">Aritmancia</option>
+            <option value="cursoo4">Adivinación</option>
+            <option value="cursoo5">Estudio de runas antiguas</option>
+        </select>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Opcional" rows="5"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 - Todos los derechos reservados <br>
+    "Draco Dormiens Nunquam Titillandus" <br>
+    (Nunca le hagas cosquillas a un dragón dormido)
+  </p>
+</footer>
+
+</body>
+</html>
